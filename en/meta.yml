@@ -1,14 +1,19 @@
-title: Project title in sentence case
 hero_image: images/banner.png
 description: A short description of the project
 listed: false
 pdf: false
+title: 'Indieweb Silly Button Wall'
+landing: true
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: 'Add the silly buttons'
+  - title: 'Style the page text'
+  - title: 'Style the button stage'
     completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
+      - 'engaged'
+  - title: 'Arrange the button wall'
+  - title: 'Add the base button style'
     completion:
-      - external
+      - 'internal'
+  - title: 'Make every button absurd'
+    completion:
+      - 'external'

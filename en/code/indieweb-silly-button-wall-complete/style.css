@@ -1,0 +1,129 @@
+/* Style one easy grid of ridiculous buttons with loud hover states. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: #1d1230;
+  background: linear-gradient(180deg, #fff79e, #ffb1e4 55%, #9ffaff 100%);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 12px 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.button-stage {
+  width: min(720px, 100%);
+  padding: 28px;
+  border: 6px solid #1d1230;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 0 0 8px #ffffff,
+    0 18px 0 #1d1230;
+}
+
+.button-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.silly-button {
+  padding: 18px 16px;
+  border: 4px solid #1d1230;
+  color: #1d1230;
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, letter-spacing 0.2s ease;
+}
+
+.drama {
+  background: #ff5aa5;
+  border-radius: 28px 10px 28px 10px;
+  box-shadow: 0 8px 0 #a51f62;
+}
+
+.drama:hover {
+  transform: translateY(-4px) rotate(-2deg);
+  box-shadow: 0 12px 0 #a51f62;
+}
+
+.nope {
+  background: #8bf2ff;
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 #1d1230;
+}
+
+.nope:hover {
+  background: #46d7ff;
+  transform: rotate(3deg);
+  letter-spacing: 0.08em;
+}
+
+.panic {
+  background: #fff06a;
+  border-radius: 999px;
+  box-shadow: 0 0 0 6px #ff8b38;
+}
+
+.panic:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 0 10px #ff8b38;
+}
+
+.glitter {
+  background: linear-gradient(135deg, #ffffff, #ff9de2, #9ffaff);
+  border-radius: 22px;
+  box-shadow: 0 8px 0 #1d1230;
+}
+
+.glitter:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #fff4a5, #ff7fcc, #6ff1ff);
+}
+
+.oops {
+  background: #ff9154;
+  border-radius: 18px 30px 14px 30px;
+  box-shadow: -8px 8px 0 #1d1230;
+}
+
+.oops:hover {
+  transform: skew(-4deg, -1deg);
+  background: #ff6c4a;
+}
+
+.forbidden {
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      #ffe34f 0 14px,
+      #1d1230 14px 28px
+    );
+  border-radius: 10px;
+  box-shadow: 0 8px 0 #ff5aa5;
+}
+
+.forbidden:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 0 #ff5aa5;
+}

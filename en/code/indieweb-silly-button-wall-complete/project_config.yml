@@ -1,0 +1,4 @@
+name: "Indieweb Silly Button Wall"
+identifier: "indieweb-silly-button-wall-complete"
+type: 'html'
+build: true
