@@ -1,20 +1,20 @@
-<h2 class="c-project-heading--task">Style the button stage</h2>
+<h2 class="c-project-heading--task">Give it terminally bad taste</h2>
 
-You will turn the page shell into a proper stage for your ridiculous buttons.
+Change the custom properties at the top of `style.css` so the page gets darker, louder, and more chaotic.
 
-Still in `style.css`, add the `.button-stage` rule underneath `p`.
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
+Open `style.css` and edit the values inside `:root`. These custom properties control the page background, the panel colours, the main accent colours, the border size, the font, and the width of the panel.
 
 <div class="c-project-tip">
 
 <h3>Tip</h3>
 
-<p>`padding` changes how much breathing room the panel has inside it.</p>
+<p>Pick colours that feel like cached profile glitter, fake warning stickers, or a control panel that should not exist.</p>
 
-<p>`border` changes how heavy and loud the panel outline feels.</p>
+<p>Small value changes can make the whole page feel more sugary, more dramatic, or more suspicious.</p>
 
-<p>`box-shadow` changes how much the panel seems to lift off the page.</p>
-
-<p>`border-radius` changes whether the panel corners feel sharp or rounded.</p>
+<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker in a new tab</a> if you want help choosing colours.</p>
 
 </div>
 
@@ -25,29 +25,33 @@ Still in `style.css`, add the `.button-stage` rule underneath `p`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 28
-line_highlights: 30-39
+line_number_start: 1
+line_highlights: 2-15
 ---
-}
-
-.button-stage {
-  width: min(720px, 100%);
-  padding: 28px;
-  border: 6px solid #1d1230;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow:
-    0 0 0 8px #ffffff,
-    0 18px 0 #1d1230;
+/* Change these values to give the control panel terminally bad taste. */
+:root {
+  --page-bg: #120014;
+  --ink: #26001b;
+  --panel-bg: #ffd8f2;
+  --accent: #7eeeff;
+  --accent-hot: #ff73c6;
+  --accent-acid: #c3ff63;
+  --accent-warning: #ffe45a;
+  --accent-mess: #ff9b54;
+  --shadow-color: #170011;
+  --border-size: 5px;
+  --corner-size: 18px;
+  --body-font: Verdana, Geneva, sans-serif;
+  --stage-width: 35rem;
 }
 --- /code ---
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
+## Now run your code
 
-The heading, paragraph, and buttons should now sit inside one big bright panel.
+The page should still work the same way, but it should now look more like a cursed profile control panel.
 
 <div class="c-project-output">
-  <img src="images/step_3_output.png" alt="Observed project output after this step.">
+  <img src="images/step_3_output.png" alt="Expected project output after step 3 showing darker colours and louder control-panel styling.">
 </div>

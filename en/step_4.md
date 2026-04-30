@@ -1,8 +1,10 @@
 <h2 class="c-project-heading--task">Arrange the button wall</h2>
 
-You will turn the button section into a neat grid instead of one awkward stack.
+Turn the button section into a proper wall instead of one awkward row of browser buttons.
 
-Still in `style.css`, add the `.button-wall` rule underneath `.button-stage`.
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
+Stay in `style.css` and add the `.button-wall` rule underneath `.button-stage`.
 
 <div class="c-project-tip">
 
@@ -12,7 +14,7 @@ Still in `style.css`, add the `.button-wall` rule underneath `.button-stage`.
 
 <p>`gap` changes the space between the buttons.</p>
 
-<p>`margin-top` changes how far the wall sits below the heading text.</p>
+<p>`margin-top` changes how far the wall sits below the header text.</p>
 
 </div>
 
@@ -23,25 +25,23 @@ Still in `style.css`, add the `.button-wall` rule underneath `.button-stage`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 39
-line_highlights: 41-46
+line_number_start: 79
+line_highlights: 79-84
 ---
-}
-
 .button-wall {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 16px;
   margin-top: 22px;
 }
 --- /code ---
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
+## Now run your code
 
-The buttons should now sit in a proper wall instead of stacking in one narrow line.
+The buttons should now sit in a proper wall instead of drifting around the panel.
 
 <div class="c-project-output">
-  <img src="images/step_4_output.png" alt="Observed project output after this step.">
+  <img src="images/step_4_output.png" alt="Expected project output after step 4 showing the buttons arranged in a wall layout.">
 </div>

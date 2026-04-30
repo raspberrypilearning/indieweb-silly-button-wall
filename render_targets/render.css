@@ -1,18 +1,14 @@
-/* Change these values to give the control panel terminally bad taste. */
+/* Render-only stylesheet for tutorial step screenshots. */
 :root {
-  --page-bg: #120014;
-  --ink: #26001b;
-  --panel-bg: #ffd8f2;
-  --accent: #7eeeff;
-  --accent-hot: #ff73c6;
-  --accent-acid: #c3ff63;
-  --accent-warning: #ffe45a;
-  --accent-mess: #ff9b54;
-  --shadow-color: #170011;
-  --border-size: 5px;
-  --corner-size: 18px;
-  --body-font: Verdana, Geneva, sans-serif;
-  --stage-width: 35rem;
+  --page-bg: #26132c;
+  --ink: #2a041e;
+  --panel-bg: #fff2fb;
+  --accent: #8ce8ff;
+  --shadow-color: #22001a;
+  --border-size: 4px;
+  --corner-size: 20px;
+  --body-font: Arial, sans-serif;
+  --stage-width: 33rem;
 }
 
 * {
@@ -26,11 +22,24 @@ body {
   place-items: center;
   padding: 24px;
   background:
-    radial-gradient(circle at top, rgba(255, 115, 198, 0.24), transparent 26%),
-    radial-gradient(circle at 85% 18%, rgba(126, 238, 255, 0.18), transparent 18%),
+    radial-gradient(circle at top, rgba(255, 106, 199, 0.22), transparent 26%),
+    radial-gradient(circle at 85% 18%, rgba(140, 232, 255, 0.16), transparent 18%),
     linear-gradient(180deg, #09000d, var(--page-bg));
   color: var(--ink);
   font-family: var(--body-font);
+}
+
+.button-stage {
+  width: min(var(--stage-width), calc(100vw - 48px));
+  padding: 24px;
+  border: var(--border-size) solid var(--ink);
+  border-radius: calc(var(--corner-size) + 6px);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0)),
+    var(--panel-bg);
+  box-shadow:
+    0 14px 0 var(--shadow-color),
+    0 26px 30px rgba(0, 0, 0, 0.4);
 }
 
 .eyebrow {
@@ -63,27 +72,36 @@ p {
   line-height: 1.5;
 }
 
-.button-stage {
-  width: min(var(--stage-width), calc(100vw - 48px));
-  padding: 24px;
-  border: var(--border-size) solid var(--ink);
-  border-radius: calc(var(--corner-size) + 6px);
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0)),
-    var(--panel-bg);
-  box-shadow:
-    0 14px 0 var(--shadow-color),
-    0 26px 30px rgba(0, 0, 0, 0.4);
+body.step-3,
+body.step-4,
+body.step-5,
+body.step-6 {
+  --page-bg: #120014;
+  --ink: #26001b;
+  --panel-bg: #ffd8f2;
+  --accent: #7eeeff;
+  --accent-hot: #ff73c6;
+  --accent-acid: #c3ff63;
+  --accent-warning: #ffe45a;
+  --accent-mess: #ff9b54;
+  --shadow-color: #170011;
+  --border-size: 5px;
+  --corner-size: 18px;
+  --body-font: Verdana, Geneva, sans-serif;
+  --stage-width: 35rem;
 }
 
-.button-wall {
+body.step-4 .button-wall,
+body.step-5 .button-wall,
+body.step-6 .button-wall {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
   gap: 16px;
   margin-top: 22px;
 }
 
-.silly-button {
+body.step-5 .silly-button,
+body.step-6 .silly-button {
   padding: 18px 16px;
   border: 4px solid var(--ink);
   color: var(--ink);
@@ -96,63 +114,63 @@ p {
   transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, letter-spacing 0.18s ease, filter 0.18s ease;
 }
 
-.drama {
+body.step-6 .drama {
   background: var(--accent-hot);
   border-radius: 28px 10px 28px 10px;
   box-shadow: 0 8px 0 #9d1e61;
 }
 
-.drama:hover {
+body.step-6 .drama:hover {
   transform: translateY(-4px) rotate(-2deg);
   box-shadow: 0 12px 0 #9d1e61;
 }
 
-.nope {
+body.step-6 .nope {
   background: var(--accent);
   border-radius: 14px;
   box-shadow: 8px 8px 0 var(--ink);
 }
 
-.nope:hover {
+body.step-6 .nope:hover {
   background: #46d9ff;
   transform: rotate(3deg);
   letter-spacing: 0.08em;
 }
 
-.panic {
+body.step-6 .panic {
   background: var(--accent-warning);
   border-radius: 999px;
   box-shadow: 0 0 0 6px #ff8b38;
 }
 
-.panic:hover {
+body.step-6 .panic:hover {
   transform: scale(1.06);
   box-shadow: 0 0 0 10px #ff8b38;
 }
 
-.glitter {
+body.step-6 .glitter {
   background: linear-gradient(135deg, #fffef8, #ff9de0, #8dfff6);
   border-radius: 24px;
   box-shadow: 0 8px 0 var(--ink);
 }
 
-.glitter:hover {
+body.step-6 .glitter:hover {
   transform: translateY(-4px);
   background: linear-gradient(135deg, #fff2a1, #ff73c6, #63f3ff);
 }
 
-.oops {
+body.step-6 .oops {
   background: var(--accent-mess);
   border-radius: 18px 30px 14px 30px;
   box-shadow: -8px 8px 0 var(--ink);
 }
 
-.oops:hover {
+body.step-6 .oops:hover {
   transform: skew(-4deg, -1deg);
   background: #ff6d4f;
 }
 
-.forbidden {
+body.step-6 .forbidden {
   background:
     repeating-linear-gradient(
       -45deg,
@@ -165,7 +183,7 @@ p {
   box-shadow: 0 8px 0 var(--accent-hot);
 }
 
-.forbidden:hover {
+body.step-6 .forbidden:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 12px 0 var(--accent-hot);
   filter: saturate(1.15);

@@ -1,8 +1,10 @@
-<h2 class="c-project-heading--task">Add the silly buttons</h2>
+<h2 class="c-project-heading--task">Add the cursed control header</h2>
 
-You will fill the empty wall with six large buttons that have short ridiculous labels.
+Add the visible header inside `<main class="button-stage">` so the page stops looking empty.
 
-Open `index.html` and add six buttons inside the `button-wall` section.
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
+Open `index.html`. The starter file has an empty `<main>` element, so add the eyebrow, the main heading, and the short paragraph inside it.
 
 <div class="c-project-code">
 
@@ -12,29 +14,21 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 1
-line_highlights: 13-20
+line_highlights: 10-14
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Indieweb Silly Button Wall</title>
+    <title>PROFILE PANIC BUTTON WALL</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main class="button-stage">
-      <h1>Button Emergency</h1>
-      <p>Six terrible decisions are now fully operational.</p>
-      <section class="button-wall">
-        <!-- Give each button a class so you can style it later. -->
-        <button class="silly-button drama" type="button">Press for drama</button>
-        <button class="silly-button nope" type="button">Absolutely not</button>
-        <button class="silly-button panic" type="button">Tiny panic</button>
-        <button class="silly-button glitter" type="button">More glitter</button>
-        <button class="silly-button oops" type="button">Oops</button>
-        <button class="silly-button forbidden" type="button">Bad idea</button>
-      </section>
+      <p class="eyebrow">Recovered profile controls // cached at 1:43am</p>
+      <h1>PROFILE PANIC BUTTON WALL</h1>
+      <p>Six cursed profile buttons are waiting for one truly awful mood.</p>
     </main>
   </body>
 </html>
@@ -42,10 +36,10 @@ line_highlights: 13-20
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
+## Now run your code
 
-You should now see six plain buttons stacked inside the page shell.
+You should see the recovered profile header inside the panel instead of a blank box.
 
 <div class="c-project-output">
-  <img src="images/step_1_output.png" alt="Observed project output after this step.">
+  <img src="images/step_1_output.png" alt="Expected project output after step 1 showing the profile control header inside the panel.">
 </div>

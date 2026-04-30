@@ -1,1 +1,73 @@
-/* Build the loud button wall styles here. */
+/* Change these values to give the control panel terminally bad taste. */
+:root {
+  --page-bg: #26132c;
+  --ink: #2a041e;
+  --panel-bg: #fff2fb;
+  --accent: #8ce8ff;
+  --shadow-color: #22001a;
+  --border-size: 4px;
+  --corner-size: 20px;
+  --body-font: Arial, sans-serif;
+  --stage-width: 33rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top, rgba(255, 106, 199, 0.22), transparent 26%),
+    radial-gradient(circle at 85% 18%, rgba(140, 232, 255, 0.16), transparent 18%),
+    linear-gradient(180deg, #09000d, var(--page-bg));
+  color: var(--ink);
+  font-family: var(--body-font);
+}
+
+.button-stage {
+  width: min(var(--stage-width), calc(100vw - 48px));
+  padding: 24px;
+  border: var(--border-size) solid var(--ink);
+  border-radius: calc(var(--corner-size) + 6px);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0)),
+    var(--panel-bg);
+  box-shadow:
+    0 14px 0 var(--shadow-color),
+    0 26px 30px rgba(0, 0, 0, 0.4);
+}
+
+.eyebrow {
+  margin: 0;
+  display: inline-block;
+  padding: 6px 10px;
+  border: 2px solid var(--ink);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 4px 4px 0 var(--shadow-color);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+h1 {
+  margin: 12px 0 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2.5rem, 9vw, 4rem);
+  line-height: 0.94;
+  letter-spacing: 0.04em;
+  overflow-wrap: anywhere;
+  text-shadow: 3px 3px 0 #fff17a;
+}
+
+p {
+  margin: 12px 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}

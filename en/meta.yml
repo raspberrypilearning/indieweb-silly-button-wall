@@ -1,19 +1,19 @@
 hero_image: images/banner.png
-description: A short description of the project
+description: Make a cursed profile control panel filled with loud ridiculous buttons
 listed: false
 pdf: false
-title: 'Indieweb Silly Button Wall'
+title: 'Indieweb Profile Panic Button Wall'
 landing: true
 steps:
-  - title: 'Add the silly buttons'
-  - title: 'Style the page text'
-  - title: 'Style the button stage'
+  - title: 'Add the cursed control header'
+  - title: 'Add the panic buttons'
+  - title: 'Give it terminally bad taste'
     completion:
       - 'engaged'
   - title: 'Arrange the button wall'
-  - title: 'Add the base button style'
+  - title: 'Make the buttons loud'
     completion:
       - 'internal'
-  - title: 'Make every button absurd'
+  - title: 'Make every button suspicious'
     completion:
       - 'external'
