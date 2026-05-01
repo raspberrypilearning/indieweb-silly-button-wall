@@ -2,8 +2,7 @@
 
 Add a third button so the wall finally feels like a proper soundboard.
 
-## Step 1
-
+### Step 1
 Add this extra button inside `<section class="button-wall">`, then add the matching audio element underneath the others.
 
 <div class="c-project-code">
@@ -29,8 +28,7 @@ line_highlights: 18-22
 
 </div>
 
-## Step 2
-
+### Step 2
 Open `style.css` and add these rules underneath `.nope:hover`.
 
 <div class="c-project-code">
@@ -57,8 +55,7 @@ line_highlights: 119-127
 
 </div>
 
-## Step 3
-
+### Step 3
 Go back to `index.html` and add this click handler underneath the other two.
 
 <div class="c-project-code">

@@ -2,9 +2,11 @@
 
 Add one loud button to the wall, then make it jump and squeal when clicked. Add the button HTML, give it its own CSS class, and make it play `drama.mp3`.
 
-## Step 1
+### Step 1
+Run the code to see the unstyled page.
 
-Put this button inside `<section class="button-wall">`, then add the matching audio element underneath the section.
+### Step 2
+Put a button inside `<section class="button-wall">`, then add the matching audio element underneath the section:
 
 <div class="c-project-code">
 
@@ -30,8 +32,7 @@ line_highlights: 15-18
 
 </div>
 
-## Step 2
-
+### Step 3
 Open `style.css` and add these rules underneath `.silly-button`.
 
 <div class="c-project-code">
@@ -58,8 +59,7 @@ line_highlights: 99-107
 
 </div>
 
-## Step 3
-
+### Step 4
 Go back to `index.html` and add this code inside `<script>` so the button plays its sound when someone clicks it.
 
 <div class="c-project-code">
@@ -88,7 +88,6 @@ line_highlights: 19-27
 </div>
 
 ## Now run your code
-
 The bright pink button should hop when you hover over it and play a short dramatic sound when you click it.
 
 <div class="c-project-output">

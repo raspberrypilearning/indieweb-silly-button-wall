@@ -2,8 +2,7 @@
 
 Add a second button with its own weird shape and its own rude little sound.
 
-## Step 1
-
+### Step 1
 Add this extra button inside `<section class="button-wall">`, then add the matching audio element underneath the first one.
 
 <div class="c-project-code">
@@ -27,8 +26,7 @@ line_highlights: 17-20
 
 </div>
 
-## Step 2
-
+### Step 2
 Open `style.css` and add these rules underneath `.drama:hover`.
 
 <div class="c-project-code">
@@ -56,8 +54,7 @@ line_highlights: 109-117
 
 </div>
 
-## Step 3
-
+### Step 3
 Go back to `index.html` and add this extra click handler underneath the first one.
 
 <div class="c-project-code">
