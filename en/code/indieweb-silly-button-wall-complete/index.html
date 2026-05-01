@@ -20,6 +20,45 @@
         <button class="silly-button oops" type="button">oops all screenshots</button>
         <button class="silly-button forbidden" type="button">cringe portal</button>
       </section>
+
+      <audio id="drama-sound" src="drama.mp3" preload="auto"></audio>
+      <audio id="nope-sound" src="nope.mp3" preload="auto"></audio>
+      <audio id="panic-sound" src="panic.mp3" preload="auto"></audio>
+      <audio id="glitter-sound" src="glitter.mp3" preload="auto"></audio>
+      <audio id="oops-sound" src="oops.mp3" preload="auto"></audio>
+      <audio id="forbidden-sound" src="forbidden.mp3" preload="auto"></audio>
     </main>
+
+    <script>
+      function playButtonSound(soundId) {
+        const sound = document.querySelector(soundId);
+        sound.currentTime = 0;
+        sound.play();
+      }
+
+      document.querySelector(".drama").addEventListener("click", function () {
+        playButtonSound("#drama-sound");
+      });
+
+      document.querySelector(".nope").addEventListener("click", function () {
+        playButtonSound("#nope-sound");
+      });
+
+      document.querySelector(".panic").addEventListener("click", function () {
+        playButtonSound("#panic-sound");
+      });
+
+      document.querySelector(".glitter").addEventListener("click", function () {
+        playButtonSound("#glitter-sound");
+      });
+
+      document.querySelector(".oops").addEventListener("click", function () {
+        playButtonSound("#oops-sound");
+      });
+
+      document.querySelector(".forbidden").addEventListener("click", function () {
+        playButtonSound("#forbidden-sound");
+      });
+    </script>
   </body>
 </html>

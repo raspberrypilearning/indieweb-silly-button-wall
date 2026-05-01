@@ -1,22 +1,41 @@
-<h2 class="c-project-heading--task">Give it terminally bad taste</h2>
+<h2 class="c-project-heading--task">Build the panic button</h2>
 
-Change the custom properties at the top of `style.css` so the page gets darker, louder, and more chaotic.
+Add a third button so the wall finally feels like a proper little meltdown.
 
 <h2 class="c-project-heading--explainer">Make this change</h2>
 
-Open `style.css` and edit the values inside `:root`. These custom properties control the page background, the panel colours, the main accent colours, the border size, the font, and the width of the panel.
+Use the first two buttons as your pattern again. This step adds one more button, one more sound file, and one more click handler so your wall has three fully working controls.
 
-<div class="c-project-tip">
+## Step 1
 
-<h3>Tip</h3>
+Stay in `index.html`. Add this extra button inside `<section class="button-wall">`, then add the matching audio element underneath the others.
 
-<p>Pick colours that feel like cached profile glitter, fake warning stickers, or a control panel that should not exist.</p>
+<div class="c-project-code">
 
-<p>Small value changes can make the whole page feel more sugary, more dramatic, or more suspicious.</p>
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 15
+line_highlights: 18-22
+---
+      <section class="button-wall">
+        <button class="silly-button drama" type="button">start fake drama</button>
+        <button class="silly-button nope" type="button">delete my aura</button>
+        <button class="silly-button panic" type="button">panic glitter</button>
+      </section>
 
-<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker in a new tab</a> if you want help choosing colours.</p>
+      <audio id="drama-sound" src="drama.mp3" preload="auto"></audio>
+      <audio id="nope-sound" src="nope.mp3" preload="auto"></audio>
+      <audio id="panic-sound" src="panic.mp3" preload="auto"></audio>
+--- /code ---
 
 </div>
+
+## Step 2
+
+Open `style.css` and add these rules underneath `.nope:hover`.
 
 <div class="c-project-code">
 
@@ -25,33 +44,53 @@ Open `style.css` and edit the values inside `:root`. These custom properties con
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 1
-line_highlights: 2-15
+line_number_start: 119
+line_highlights: 119-127
 ---
-/* Change these values to give the control panel terminally bad taste. */
-:root {
-  --page-bg: #120014;
-  --ink: #26001b;
-  --panel-bg: #ffd8f2;
-  --accent: #7eeeff;
-  --accent-hot: #ff73c6;
-  --accent-acid: #c3ff63;
-  --accent-warning: #ffe45a;
-  --accent-mess: #ff9b54;
-  --shadow-color: #170011;
-  --border-size: 5px;
-  --corner-size: 18px;
-  --body-font: Verdana, Geneva, sans-serif;
-  --stage-width: 35rem;
+.panic {
+  background: var(--accent-warning);
+  border-radius: 999px;
+  box-shadow: 0 0 0 6px #ff8b38;
 }
+
+.panic:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 0 10px #ff8b38;
+}
+--- /code ---
+
+</div>
+
+## Step 3
+
+Go back to `index.html` and add this click handler underneath the other two.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 29
+line_highlights: 33-35
+---
+      document.querySelector(".nope").addEventListener("click", function () {
+        playButtonSound("#nope-sound");
+      });
+
+      document.querySelector(".panic").addEventListener("click", function () {
+        playButtonSound("#panic-sound");
+      });
+    </script>
 --- /code ---
 
 </div>
 
 ## Now run your code
 
-The page should still work the same way, but it should now look more like a cursed profile control panel.
+You should now have three buttons in the wall, and all three should play their own different sound when clicked.
 
 <div class="c-project-output">
-  <img src="images/step_3_output.png" alt="Expected project output after step 3 showing darker colours and louder control-panel styling.">
+  <img src="images/step_3_output.png" alt="Expected project output after step 3 showing three styled buttons in the panic panel.">
 </div>
