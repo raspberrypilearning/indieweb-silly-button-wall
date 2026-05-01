@@ -8,7 +8,7 @@ Use the first button as your pattern. This step adds a second button, a second a
 
 ## Step 1
 
-Stay in `index.html`. Add this extra button inside `<section class="button-wall">`, then add the matching audio element underneath the first one.
+Add this extra button inside `<section class="button-wall">`, then add the matching audio element underneath the first one.
 
 <div class="c-project-code">
 

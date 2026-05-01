@@ -8,7 +8,7 @@ Use the empty button wall in `index.html` as your starting point. Add the button
 
 ## Step 1
 
-Open `index.html`. Put this button inside `<section class="button-wall">`, then add the matching audio element underneath the section.
+Put this button inside `<section class="button-wall">`, then add the matching audio element underneath the section.
 
 <div class="c-project-code">
 
