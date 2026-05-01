@@ -1,10 +1,6 @@
 <h2 class="c-project-heading--task">Build the fake drama button</h2>
 
-Add one loud button to the wall, then make it jump and squeal when clicked.
-
-<h2 class="c-project-heading--explainer">Make this change</h2>
-
-Use the empty button wall in `index.html` as your starting point. Add the button HTML, give it its own CSS class, and make it play `drama.mp3`.
+Add one loud button to the wall, then make it jump and squeal when clicked. Add the button HTML, give it its own CSS class, and make it play `drama.mp3`.
 
 ## Step 1
 

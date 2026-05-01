@@ -2,10 +2,6 @@
 
 Add a second button with its own weird shape and its own rude little sound.
 
-<h2 class="c-project-heading--explainer">Make this change</h2>
-
-Use the first button as your pattern. This step adds a second button, a second audio element, a new CSS class, and another click handler for `nope.mp3`.
-
 ## Step 1
 
 Add this extra button inside `<section class="button-wall">`, then add the matching audio element underneath the first one.

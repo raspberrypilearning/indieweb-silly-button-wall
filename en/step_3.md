@@ -1,10 +1,6 @@
 <h2 class="c-project-heading--task">Build the panic button</h2>
 
-Add a third button so the wall finally feels like a proper little meltdown.
-
-<h2 class="c-project-heading--explainer">Make this change</h2>
-
-Use the first two buttons as your pattern again. This step adds one more button, one more sound file, and one more click handler so your wall has three fully working controls.
+Add a third button so the wall finally feels like a proper soundboard.
 
 ## Step 1
 

@@ -2,8 +2,6 @@
 
 Copy the pattern you already know to fill the wall with three extra buttons and three extra sounds.
 
-<h2 class="c-project-heading--explainer">Make this change</h2>
-
 The extra MP3 files are already in the project folder, so add the new buttons, the new audio elements, and the extra click handlers in `index.html`, then add your own styles in `style.css`.
 
 <div class="c-project-code">
