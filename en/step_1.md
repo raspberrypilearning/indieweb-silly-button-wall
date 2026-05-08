@@ -21,7 +21,7 @@ line_number_start: 10
 line_highlights: 15,18
 ---
     <main class="button-stage">
-      <p class="eyebrow">Recovered profile controls // cached at 1:43am</p>
+      <p class="eyebrow">WARNING: BUTTONS HAVE AURA<br>// PROBABLY NEGATIVE</p>
       <h1>WALL OF BUTTONS</h1>
       <p>Three cursed profile buttons are waiting for one truly awful mood.</p>
       <section class="button-wall">
