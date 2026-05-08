@@ -1,4 +1,4 @@
-name: "Indieweb Profile Panic Button Wall"
+name: "Wall of Buttons"
 identifier: "indieweb-silly-button-wall-complete"
 type: 'html'
 build: true

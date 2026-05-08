@@ -5,7 +5,9 @@
     1,
     2,
     3,
-    4
+    4,
+    5,
+    6
   ],
   "renderer": "swift-webkit",
   "skipped_steps": [],
@@ -29,6 +31,16 @@
       "output": "images/step_4_output.png",
       "status": "generated",
       "target": "temporary local render source for step 4"
+    },
+    "5": {
+      "output": "images/step_5_output.png",
+      "status": "generated",
+      "target": "temporary local render source for step 5"
+    },
+    "6": {
+      "output": "images/step_6_output.png",
+      "status": "generated",
+      "target": "temporary local render source for step 6"
     }
   },
   "toolchain_available": true

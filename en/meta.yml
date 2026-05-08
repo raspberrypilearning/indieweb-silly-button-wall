@@ -2,14 +2,17 @@ hero_image: images/banner.png
 description: Make a cursed profile control panel with loud ridiculous buttons and fake sound effects
 listed: false
 pdf: false
-title: 'Indieweb Profile Panic Button Wall'
+title: 'Indieweb Wall of Buttons'
 landing: true
 steps:
-  - title: 'Build the fake drama button'
+  - title: 'Add one button to the wall'
+  - title: 'Give it its own CSS class'
+  - title: 'Make it play drama.mp3'
   - title: 'Build the aura button'
-  - title: 'Build the panic button'
     completion:
       - 'engaged'
-  - title: 'Challenge: add three more cursed buttons'
+  - title: 'Build the panic button'
     completion:
-      - 'external'
+      - 'internal'
+  - title: 'Challenge: add three more cursed buttons'
+    challenge: true

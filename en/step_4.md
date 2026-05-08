@@ -1,8 +1,11 @@
-<h2 class="c-project-heading--task">Challenge: add three more cursed buttons</h2>
+<h2 class="c-project-heading--task">Build the aura button</h2>
 
-Copy the pattern you already know to fill the wall with three extra buttons and three extra sounds.
+Add a second button with its own weird shape and its own rude little sound.
 
-The extra MP3 files are already in the project folder, so add the new buttons, the new audio elements, and the extra click handlers in `index.html`, then add your own styles in `style.css`.
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
+## Step 1
+Add this extra button inside `<section class="button-wall">`, then add the matching audio element underneath the first one.
 
 <div class="c-project-code">
 
@@ -11,23 +14,54 @@ The extra MP3 files are already in the project folder, so add the new buttons, t
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 18
-line_highlights: 19-27
+line_number_start: 14
+line_highlights: 16,20
 ---
-        <button class="silly-button glitter" type="button">refresh flop era</button>
-        <button class="silly-button oops" type="button">oops all screenshots</button>
-        <button class="silly-button forbidden" type="button">cringe portal</button>
+      <section class="button-wall">
+        <button class="silly-button drama" type="button">start fake drama</button>
+        <button class="silly-button nope" type="button">delete my aura</button>
       </section>
 
       <audio id="drama-sound" src="drama.mp3" preload="auto"></audio>
       <audio id="nope-sound" src="nope.mp3" preload="auto"></audio>
-      <audio id="panic-sound" src="panic.mp3" preload="auto"></audio>
-      <audio id="glitter-sound" src="glitter.mp3" preload="auto"></audio>
-      <audio id="oops-sound" src="oops.mp3" preload="auto"></audio>
-      <audio id="forbidden-sound" src="forbidden.mp3" preload="auto"></audio>
 --- /code ---
 
 </div>
+
+## Step 2
+Open `style.css` and add these rules underneath `.drama:hover`.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 106
+line_highlights: 110-120
+---
+  transform: translateY(-4px) rotate(-2deg);
+  box-shadow: 0 12px 0 #9d1e61;
+}
+
+.nope {
+  background: var(--accent);
+  border-radius: 14px;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.nope:hover {
+  background: #46d9ff;
+  transform: rotate(3deg);
+  letter-spacing: 0.08em;
+}
+--- /code ---
+
+</div>
+
+## Step 3
+Go back to `index.html` and add this extra click handler underneath the first one.
 
 <div class="c-project-code">
 
@@ -36,44 +70,25 @@ line_highlights: 19-27
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 45
-line_highlights: 51-59
+line_number_start: 30
+line_highlights: 34-36
 ---
-      document.querySelector(".glitter").addEventListener("click", function () {
-        playButtonSound("#glitter-sound");
+      document.querySelector(".drama").addEventListener("click", function () {
+        playButtonSound("#drama-sound");
       });
 
-      document.querySelector(".oops").addEventListener("click", function () {
-        playButtonSound("#oops-sound");
+      document.querySelector(".nope").addEventListener("click", function () {
+        playButtonSound("#nope-sound");
       });
-
-      document.querySelector(".forbidden").addEventListener("click", function () {
-        playButtonSound("#forbidden-sound");
-      });
+    </script>
 --- /code ---
-
-</div>
-
-<div class="c-project-tip">
-
-<h3>Tip</h3>
-
-<p>`glitter` looks good with a sugary gradient, rounded corners, and a tiny jump on hover.</p>
-
-<p>`oops` looks good with a wonky border radius, a messier orange colour, and a sideways skew on hover.</p>
-
-<p>`forbidden` looks good with warning stripes, pale text, and a small scale-up when hovered.</p>
-
-<p>Copy one of your earlier listener blocks if you want each extra button to play its own MP3.</p>
-
-<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker in a new tab</a> if you want help choosing colours.</p>
 
 </div>
 
 ## Now run your code
 
-If you add the extra buttons and style them, your wall should feel much closer to the six-button version shown below.
+You should now have two buttons. The blue one should twist slightly on hover and play its own blunt little sound when clicked.
 
 <div class="c-project-output">
-  <img src="images/step_4_output.png" alt="Expected project output after step 4 showing the full six-button panic wall.">
+  <img src="images/step_4_output.png" alt="Expected project output after step 4 showing two styled buttons in the wall panel.">
 </div>
