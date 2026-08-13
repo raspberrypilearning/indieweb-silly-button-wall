@@ -1,6 +1,6 @@
 hero_image: images/banner.png
 description: Make a cursed profile control panel with loud ridiculous buttons and fake sound effects
-listed: false
+listed: true
 pdf: false
 title: 'Indieweb Wall of Buttons'
 landing: true
